@@ -11,7 +11,7 @@ Projet de formation OpenClassrooms : créer la page d'accueil d'une agence de vo
 ## 📁 Structure du repository
 
 ```
-Test-Booki-avec-Companion/
+
 ├── index.html
 ├── README.md
 ├── agents.md
@@ -44,7 +44,7 @@ OpenClassrooms training project: build the homepage of a travel agency by integr
 
 ## 📁 Repository Structure
 
-Test-Booki-avec-Companion/
+
 ├── index.html
 ├── README.md
 ├── agents.md
