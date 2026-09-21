@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+     margin: 0;
+     padding:0;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -16,12 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 0 30px;
+    padding: 9px 0 30px;
 }
 
 .logo-booki-header {
     max-width: 80px;
-    height: auto;
+    
 }
 
 .navbar a {
@@ -41,12 +44,19 @@ header {
 
 /****section barre de recherche et hero****/
 
+
+.headline{
+    gap:8px;
+    display: flex;
+    flex-direction: column;
+}
 h1 {
-    font-size: 20px;
+    font-size: 22px;
+   
 }
 
 p {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 30px;
 }
 
@@ -100,6 +110,12 @@ label[for="search-bar"] {
     background-color: #0050c3;
     
 }
+
+
+    .search-icon {
+        display: none;
+    }
+
 
 .cta-filtre {
     display: flex;
@@ -347,7 +363,7 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 #activites {
 border-radius: 20px;
 margin:30px;
-max-height:600Px
+max-height:600px;
     
 }
 
@@ -431,6 +447,7 @@ max-height:600Px
 
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
+        display: flex;
         flex-direction: column;
     }
 
@@ -463,6 +480,262 @@ max-height:600Px
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media screen and (max-width:768px){
+    .main-container{
+        padding:0 ;
+        max-width:768px;
+        width:100%;
+    }
+
+    .mobile-header{
+        padding: 20px;
+    }
+
+
+    header{
+        flex-direction: column;
+        padding:15px 0;
+        gap:10px;
+        width:100%;
+       
+               
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        width:100%;    
+      
+    }
+
+    .navbar a {
+        text-align: center;
+        font-weight:500;
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 2;
+        font-size: 19px;
+      border-bottom:2px solid rgba(128, 128, 128, 0.26); 
+       
+    }
+
+    .navbar a:active,
+    .navbar a:hover{
+        border-bottom: 3px solid var(--main-color);
+        border-top: none;
+        transform: none;
+        background-color: white;
+    }
+
+   .headline{
+    margin:  5px auto; 
+    max-width: 768px;
+    
+   
+    
+   }
+
+   .headline h1{
+    font-size: 22px;
+    font-weight: 700;  
+    width:335px;
+    
+   }
+
+   .headline p{
+      
+        font-size: 16px;
+        font-weight: 400;
+          width:335px;
+      
+       
+   }
+
+
+    /**** Barre de recherche ****/
+    .search-bar-container {
+        margin:20px auto;
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        overflow: visible;
+    }
+
+    label[for="search-bar"] {
+        border-top-left-radius: 20px ;
+        border-bottom-left-radius: 20px;
+        background-color: #F2F2F2;
+        width: 50px;
+        height: 50px;
+    }
+
+    #search-bar {
+        border: none;
+        text-align: center;
+        padding-left: 10px;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    .search-icon {
+        display: flex;
+        
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    #search-button {
+        flex: 0 0 50px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-radius: 14px;
+        box-shadow: 0px 5px 5px rgba(0,0,0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #search-button:active{
+        transform: scale(0.95);
+    }
+.cta-filtre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "titre      titre"
+        "economique familiale"
+        "romantique pepites";
+    gap: 15px;
+    align-items: center;
 }
+
+.cta-filtre-label {
+    grid-area: titre;
+}
+
+.cta-filtre-button:nth-child(2) {
+    grid-area: economique;
+}
+
+.cta-filtre-button:nth-child(3) {
+    grid-area: familiale;
+}
+
+.cta-filtre-button:nth-child(4) {
+    grid-area: romantique;
+}
+
+.cta-filtre-button:nth-child(5) {
+    grid-area: pepites;
+
+   }
+
+   .hebergements-and-populaires{
+    flex-direction: column-reverse;
+
+   }
+
+   .populaires{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+   }
+  
+   
+   .populaires-cards a{
+    width:100%;
+    
+   }
+   .populaires-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    
+    
+   }
+   .grid-hebergements-container{
+      display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    
+   
+   }
+   
+   #hebergements{
+     background-color: #ffffff;
+   }
+    .hebergements-card-content {
+    max-width: 100%;
+}
+
+.grid-hebergements-container a {
+    display: block;
+    width: 100%;
+}
+.cta-afficher-plus{
+    text-align: left;
+    font-size:18px;
+    font-weight: 700;
+    
+}
+
+.grid-activites-container {
+    grid-template-columns: 1fr;
+    background-color: white;
+}
+
+.activites-title{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.activites-card-content {
+  max-width: 315px;
+    width: 100%;
+    margin:auto;
+}
+
+.activites-card-img {
+    height: 141px;
+    margin-bottom: 20px;
+    
+
+    
+}
+
+.grid-activites-container a {
+    display: innline-block;
+    width: 100%;
+
+}
+
+#activites {
+    max-height: none;
+   margin: 30px 0;
+   
+}
+
+.activites-card-title{
+    text-align: left;
+    
+      
+}
+
+.grid-footer-container{
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3,1fr);
+   background-color: rgba(128, 128, 128, 0.589);
+}
+.section-footer{
+    margin:10px;
+    
+}
+   }
