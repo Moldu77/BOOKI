@@ -410,7 +410,8 @@ max-height:600px;
 .activites-card-title {
     font-size: 16px;
     text-align: center;
-    padding:10px;
+  padding: 15px;
+    height:50px;
 }
 
 
@@ -445,10 +446,10 @@ max-height:600px;
 
 /******Media Queries*****/
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px)  {
     .hebergements-and-populaires {
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
     }
 
     .hebergements {
@@ -458,7 +459,11 @@ max-height:600px;
     .populaires {
         width: 100%;
         margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+    
 
     .populaires-cards {
         display: flex;
@@ -477,10 +482,39 @@ max-height:600px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .grid-activites-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        height: auto;
+        gap: 15px;
+    }
+
+    .activites-card-content {
+        max-width: 100%;
+        height:270px;
+        
+    }
+
+    .activites-card-img {
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    .activites-card-title {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #activites {
+        max-height: none;
+        margin: 30px 0;
+    }
 }
 
+
 /* Small devices (phones, less than 768px) */
-@media screen and (max-width:768px){
+@media  (min-width: 320px) and (max-width:768px){
     .main-container{
         padding:0 ;
         max-width:768px;
@@ -603,6 +637,7 @@ max-height:600px;
     #search-button:active{
         transform: scale(0.95);
     }
+    
 .cta-filtre {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -642,10 +677,14 @@ max-height:600px;
 
    .populaires{
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    width:100%;
    }
-  
+  .title-populaires-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
    
    .populaires-cards a{
     width:100%;
@@ -662,6 +701,8 @@ max-height:600px;
       display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
+    max-width:350px;
+    margin:auto;
     
    
    }
@@ -701,19 +742,22 @@ max-height:600px;
   max-width: 315px;
     width: 100%;
     margin:auto;
+    
 }
 
 .activites-card-img {
+    object-fit:cover;
+    width:315px;
     height: 141px;
     margin-bottom: 20px;
-    
-
     
 }
 
 .grid-activites-container a {
     display: innline-block;
     width: 100%;
+    margin:5px ;
+    
 
 }
 
@@ -723,10 +767,9 @@ max-height:600px;
    
 }
 
+
 .activites-card-title{
-    text-align: left;
-    
-      
+    text-align: left;      
 }
 
 .grid-footer-container{
