@@ -680,6 +680,7 @@ max-height:600px;
     flex-direction: column;
     width:100%;
    }
+
   .title-populaires-container{
     display: flex;
     justify-content: space-between;
