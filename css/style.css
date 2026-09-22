@@ -460,10 +460,16 @@ max-height:600px;
         width: 100%;
         margin-top: 50px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
     }
     
+    .title-populaires-container{
+    display: flex;
+         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+     }
 
     .populaires-cards {
         display: flex;
@@ -755,7 +761,7 @@ max-height:600px;
 }
 
 .grid-activites-container a {
-    display: innline-block;
+    display: inline-block;
     width: 100%;
     margin:5px ;
     
