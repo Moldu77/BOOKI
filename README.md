@@ -14,18 +14,10 @@ Projet de formation OpenClassrooms : créer la page d'accueil d'une agence de vo
 
 ├── index.html
 ├── README.md
-├── agents.md
-├── .vscode/
+├── depot.txt
 ├── css/
 ├── images/
-└── companion/
-    ├── 01-identite-contexte.agent.md
-    ├── 02-approche-pedagogique.agent.md
-    ├── 03-presentation-projet-booki.agent.md
-    ├── 04-starter-pack-etudiant.agent.md
-    ├── 05-specifications-fonctionnelles.agent.md
-    ├── 06-specifications-techniques.agent.md
-    └── 07-checklist-validation.agent.md
+
 ```
 ---
 
@@ -47,19 +39,9 @@ OpenClassrooms training project: build the homepage of a travel agency by integr
 
 ├── index.html
 ├── README.md
-├── agents.md
-├── .vscode/
+├── depot.txt
 ├── css/
 ├── images/
-└── companion/
-├── 01-identite-contexte.agent.md
-├── 02-approche-pedagogique.agent.md
-├── 03-presentation-projet-booki.agent.md
-├── 04-starter-pack-etudiant.agent.md
-├── 05-specifications-fonctionnelles.agent.md
-├── 06-specifications-techniques.agent.md
-└── 07-checklist-validation.agent.md
-
 
 ---
 
